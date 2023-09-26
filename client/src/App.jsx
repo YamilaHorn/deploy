@@ -1,7 +1,6 @@
 import './App.css'
-
 import { Route, Routes, useLocation } from 'react-router-dom'
-
+import axios from 'axios';
 import CreateActivity from './components/CreateActivity/CreateActivity'
 import Detail from './components/Detail/Detail'
 import HomePage from './components/HomePage/HomePage'
@@ -9,6 +8,7 @@ import LandingPage from './components/LandingPage/LandingPage'
 import Nav from './components/Nav/Nav'
 import ResultsSearch from './components/SearchBar/ResultsSearch'
 
+axios.defaults.baseURL = 'http://localhost:3001/';
 
 function App() {
   
