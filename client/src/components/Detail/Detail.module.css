@@ -1,0 +1,144 @@
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  gap: 3rem;
+  border:   cornflowerblue;
+  border-radius: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px cornflowerblue;
+  box-sizing: border-box;
+  
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  max-height: 200vh;
+  justify-content: flex-end;
+  gap: 10rem;
+  margin-left: 5px;
+}
+  
+  
+  .containerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 30rem;
+    justify-content: center;
+    
+  }
+  
+  .containerImg{
+    display:flex;
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+  
+  .nameCountry {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 6px 3px 7px cornflowerblue;
+    color: white;
+    transform: scale(1);
+    transition: transform 0.7s ease;
+    margin-left: 20px;
+  }
+
+  .nameCountry:hover{
+    color: cornflowerblue;
+      
+}
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1; 
+    margin-left: 20px;
+  }
+  
+  .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+  }
+
+  .infoActivity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        rgba(138, 138, 138, 0.7),
+        rgba(65, 51, 51, 0.123)
+      );
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+    padding: 1rem;
+    
+  }
+  
+  .title {
+    margin: 2rem;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .5rem;
+    text-decoration: underline;
+  }
+  
+  .p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .arrow{
+    height: 1rem;
+    margin: 1rem;
+  }
+  
+  .activityCard{
+    display: flex;
+    flex-direction: column;
+    background-color: #cccccc91;
+    padding: 1rem;
+    border:  2px cornflowerblue;
+    box-shadow: 0 0 8px cornflowerblue;
+    border-radius: .5rem;
+  }
+  
+  .ContainerActs{
+    display: flex;
+    gap: .5rem;
+  }
+
+  .ContainerArrow{
+    
+    font-size: 25px;
+    top: 1.8rem;
+    left: 1.8rem;
+}
+

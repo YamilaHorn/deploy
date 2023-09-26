@@ -1,0 +1,75 @@
+.orders {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../images/fondofilter.jpg');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  width: 220px;
+  height: 215px;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  gap: 0.5rem;
+  border: cornflowerblue .2rem;
+  box-shadow:  0 0 5px cornflowerblue;
+  }
+  
+  .title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-shadow:0 0 10px black;
+  }
+  
+  .orders select{
+    flex-direction: column;
+    padding: 6px 16px;
+    width: 180px;
+    border: 1px  rgb(194, 194, 194);
+    border-radius: 8px;
+    background-color:  rgb(63, 60, 60);
+    box-shadow: 0 0 2px cornflowerblue;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  select:hover {
+    border-color: #999;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.2em 0.4em;
+    font-size: 1.3em;
+    letter-spacing: 2.5px;
+    text-shadow: 6px 3px 7px cornflowerblue;
+    background-image: url('../images/planeta2.gif');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: border-color 2.25s;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1);
+    transition: transform 0.7s ease;
+    margin-top: 8px;
+  }
+  
+  .button:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.3);
+  }
+  
