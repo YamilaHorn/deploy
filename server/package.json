@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "start": "NODE_ENV=production node index.js" 
+    "api": "json-server --watch api/db.json -p $PORT -q",
+    "start": "concurrently \"npm run server\" \"npm run api\"" 
   },
   "author": "",
   "license": "ISC",
