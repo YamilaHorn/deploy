@@ -6,7 +6,7 @@
   "scripts": {
     "server": "nodemon index.js",
     "api": "json-server --watch api/db.json -p $PORT -q",
-    "start": "concurrently \"npm run server\" \"npm run api\"" 
+    "start": "npm run server & npm run api" 
   },
   "author": "",
   "license": "ISC",
