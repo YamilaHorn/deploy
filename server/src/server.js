@@ -18,7 +18,7 @@ server.use((req, res, next) => {
 
 const Options = {
   origin: '*',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  methods: 'GET, POST, OPTIONS, PUT, DELETE',
 };
 
 server.use(morgan("dev"));
