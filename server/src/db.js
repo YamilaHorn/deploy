@@ -4,7 +4,8 @@ const { Sequelize } = require("sequelize");
 const fs = require('fs');
 const path = require('path');
 const {
-  DB_USER, DB_PASSWORD, DB_HOST,
+  DATABASE_URL,
+  DB_USER
 } = process.env;
 
 //*LLamo a los modelos
@@ -12,7 +13,7 @@ const {
 const CountryModel = require('./models/Country')
 const ActivityModel = require('./models/Activity')
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/countries`, {
+const sequelize = new Sequelize(DATABASE_URL, {
   logging: false, 
   native: false, 
 });
