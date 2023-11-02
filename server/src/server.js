@@ -16,13 +16,16 @@ server.use((req, res, next) => {
   next();
 });
 
-const Options = { origin: "*" };
+const Options = {
+  origin: '*',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+};
 
 server.use(morgan("dev"));
 server.use(express.json());
 server.use(cors(Options));
 
-server.use("/", routerApi);
+server.use(cors, routerApi);
 
 module.exports = server;
 
